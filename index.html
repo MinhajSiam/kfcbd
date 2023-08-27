@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #db1919;
+            margin: 0;
+        }
+
+        nav,
+        .nav-menu {
+            display: flex;
+        }
+
+        nav {
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 10px 30px #c11616;
+        }
+
+        .nav-menu {
+            margin-right: 20px;
+        }
+
+        .nav-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .nav-logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 60px;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 10px 10px 20px #d63636,
+                -20px -20px 20px #d63636;
+
+        }
+
+        /* .bg-img {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            opacity: 10%;
+
+        } */
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card img:hover {
+            transform: translateY(-15px);
+        }
+
+        .card button:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .site-title h1 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .site-title .left {
+            width: 10%;
+            position: absolute;
+            left: 1110px;
+            top: 120px;
+            border-radius: 50%;
+        }
+
+        .site-title .right {
+            width: 10%;
+            position: absolute;
+            right: 1110px;
+            top: 120px;
+            border-radius: 50%;
+        }
+
+        .contact-section {
+            margin: 60px auto 60px auto;
+            height: 350px;
+            width: 900px;
+            border-radius: 10px;
+            background: linear-gradient(145deg, white, white);
+            box-shadow: 20px 20px 20px #d23333,
+                -20px -20px 20px #d23333;
+            display: flex;
+            flex-direction: column;
+            line-height: 5px;
+            align-items: center;
+            padding: 50px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            font-size: 18px;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .button {
+            background-color: #db1919;
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            border: 1.5px solid white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 10px 70px;
+            position: relative;
+            top: -20px;
+        }
+
+        .container {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        @media screen and (max-width:767px) {
+            section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .contact-section {
+                width: 300px;
+            }
+
+        }
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            section {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        @media screen and (min-width:1024px) {
+            section {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="images/kfc.jpg" alt="">
+            </div>
+            <div class="nav-menu">
+                <a href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Contact</a>
+                <a href="">Branches</a>
+                <a href="">Menu</a>
+            </div>
+        </nav>
+    </header>
+    <div class="site-title">
+        <img class="right" src="images/cocacola.gif" alt="">
+        <h1>Burger Fest <br>LET'S ZING AROUND THE WORLD</h1>
+        <img class="left" src="images/cocacola.gif" alt="">
+    </div>
+    <!-- <img class="bg-img" src="images/kfc.jpg" alt=""> -->
+    <section>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+        <div class="card">
+            <img src="images/kfcburger.jpg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, earum?</p>
+            <button>Eat Now</button>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <span>
+            <h1 class="contact-title">Contact us</h1>
+        </span>
+        <span>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+        </span>
+        <span>
+            <textarea name="" id="" cols="86" rows="9" placeholder="Your query...">
+            </textarea>
+        </span>
+        <span>
+            <a class="button" href="">Submit</a>
+        </span>
+    </section>
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
